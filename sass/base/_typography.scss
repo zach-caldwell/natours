@@ -25,7 +25,7 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
+    letter-spacing: 1.3rem;
     animation-duration: 1s;
     animation-name: slideLeft;
     animation-timing-function: ease-in;
@@ -65,5 +65,18 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+}
+
+.feature-box {
+  &__icon {
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
